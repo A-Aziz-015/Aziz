@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Personal Portfolio</title>
+    <!-- Link to the styles.css file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>About Me</h1>
+    </header>
+    <div class="container">
+        <section class="about">
+            <img src="IMG_20230218_185114.jpg" alt="Your Image">
+            <div>
+                <h2>Abdul Aziz</h2>
+                <p>I am currently a second-year student pursuing a degree in Computer Science at the University of Hertfordshire. Throughout my studies, I have been building a solid foundation in programming, software development, and computational problem-solving, which are crucial to thriving in the technology industry.</p>
+            </div>
+        </section>
+        
+        <section class="interests">
+            <img src="pic.jpg" alt="Technical Interest">
+            <div>
+                <h2>Technical Interests</h2>
+                <p>I have a keen interest in app development and am actively learning various programming languages such as Java, Python, and HTML as part of my coursework. I'm particularly fascinated by the tools and technologies that make modern applications efficient and user-friendly.</p>
+                <p>My adaptability, quick learning ability, and strong teamwork skills make me well-suited for collaborative development projects. I am eager to gain more practical experience in software development and continue to expand my technical expertise in this dynamic field.</p>
+            </div>
+        </section>
+        
+        <section class="portfolio">
+            <h2>Portfolio</h2>
+            <div class="portfolio-item">
+                <img src="placeholder-project.jpg" alt="Project Image">
+                <h3>Project Title</h3>
+                <p>Short description of the project.</p>
+                <button onclick="window.location.href='project-details.html';">View Details</button>
+            </div>
+            <!-- Add more portfolio items as needed -->
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Abdul Aziz. All rights reserved.</p>
+    </footer>
+</body>
+</html>
