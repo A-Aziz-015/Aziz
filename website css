@@ -1,0 +1,241 @@
+/* Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f6f6f6, #e0e0e0);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Header Styles */
+header {
+    background-color: #4A90E2;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    animation: fadeIn 1.5s ease-out;
+}
+
+header h1 {
+    font-family: 'Arial', sans-serif;
+    font-weight: 600;
+    animation: slideInFromTop 1.5s ease-out;
+}
+
+/* Container Styles */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+
+/* Section Styles */
+section {
+    background: white;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-out forwards;
+}
+
+section:hover {
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-weight: 700;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+/* About and Interests Section Styles */
+.about, .interests {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    opacity: 0;
+    animation: fadeInUp 2s ease-out forwards;
+}
+
+.about img, .interests img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #4A90E2;
+    transition: transform 0.3s ease;
+}
+
+.about img:hover, .interests img:hover {
+    transform: scale(1.1);
+}
+
+/* Portfolio Styles */
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.portfolio-item {
+    background: #f9f9f9;
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    animation: fadeInUp 1.5s ease-out forwards;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-item img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-item img:hover {
+    transform: scale(1.05);
+}
+
+.portfolio-item h3 {
+    font-size: 1.4rem;
+    color: #333;
+    margin: 1rem 0;
+    font-weight: 600;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-item p {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 1rem;
+}
+
+/* Button Styles */
+.portfolio-item button {
+    padding: 0.8rem 2rem;
+    background-color: #4A90E2;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.portfolio-item button:hover {
+    background-color: #357ABD;
+    transform: translateY(-2px);
+}
+
+/* Footer Styles */
+footer {
+    background-color: #4A90E2;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    opacity: 0;
+    animation: fadeInUp 2s ease-out forwards;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+    .about, .interests {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about img, .interests img {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 1rem;
+    }
+
+    h2 {
+        font-size: 1.7rem;
+    }
+
+    .portfolio {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .portfolio {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio-item button {
+        padding: 0.8rem 1.5rem;
+    }
+}
+
+/* Gradient Animation */
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Fade-In Effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Slide-In Effect from Top */
+@keyframes slideInFromTop {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Fade-In and Slide-Up Effect */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
