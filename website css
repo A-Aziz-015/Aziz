@@ -88,14 +88,30 @@ h2 {
     transform: scale(1.05);
 }
 
-.portfolio-item button {
-    margin-top: 0.5rem;
-    padding: 0.5rem;
-    border: none;
+.portfolio-item .btn {
+    margin-top: 1rem;
+    padding: 12px 20px;
     background-color: #333;
     color: white;
+    text-decoration: none;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 30px;
+    font-size: 16px;
+    display: inline-block;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-item .btn:hover {
+    background-color: #555;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-item .btn:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 footer {
