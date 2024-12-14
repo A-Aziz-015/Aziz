@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me - Personal Portfolio</title>
-    <!-- Link to the styles.css file -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -32,12 +31,15 @@
         <section class="portfolio">
             <h2>Portfolio</h2>
             <div class="portfolio-item">
-                <img src="placeholder-project.jpg" alt="Project Image">
-                <h3>Project Title</h3>
-                <p>Short description of the project.</p>
-                <button onclick="window.location.href='project-details.html';">View Details</button>
+                <h3>HTML Codes</h3>
+                <p>Check out my HTML code examples on <a href="https://github.com/A-Aziz-015/Aziz/blob/main/website%20html" target="_blank">GitHub</a></p>
+                <a href="https://github.com/A-Aziz-015/Aziz/blob/main/website%20html" class="btn" target="_blank">View Details</a>
             </div>
-            <!-- Add more portfolio items as needed -->
+            <div class="portfolio-item">
+                <h3>CSS Codes</h3>
+                <p>Check out my CSS code examples on <a href="https://github.com/A-Aziz-015/Aziz/blob/main/website%20css" target="_blank">GitHub</a></p>
+                <a href="https://github.com/A-Aziz-015/Aziz/blob/main/website%20css" class="btn" target="_blank">View Details</a>
+            </div>
         </section>
     </div>
 
